@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Form</title>
+                    <link rel="stylesheet" href="trial.css">
+                    <script src="https://kit.fontawesome.com/fontawesome/v6.2.1/js/solid.js"></script>
+                   
+</head>
+<body>
+  <div class="container"> 
+    <form>
+      <div>
+        <label>FullName</label>
+        <input type="text" id="contact-name" onkeyup="isValid()" placeholder="Enter fullname">
+        <span id="name-error"></span>
+      </div>
+
+      <div>
+        <label>Password</label>
+  <input type="password" id="password" onkeyup ="isMax()"  placeholder="Your password">
+        <span id="password-error"></span>
+      </div>
+
+      <div>
+        <label>Email</label>
+        <input type="email" id="email" onkeyup="validateMail()" placeholder="your email">
+        <span id="email-error"></span>
+      </div>
+
+      <div>
+        <label>Phone</label>
+        <input type="tel" id="tel" onkeyup="isMobile()" placeholder="+234 80-123-456-78">
+        <span id="tel-error"></span>
+      </div>
+
+      <div>
+        <label>Message</label>
+        <textarea type="text" id="message" onkeyup="validateMessage()"></textarea>
+        <span id="message-error"></span>
+      </div>
+
+      <button onclick="return validateForm()" id="submit" type="submit">Submit</button>
+      <span id="submit-error"></span>
+      
+    </form>
+  </div>             
+</body>
+<script src="trial.js"></script>
+</html>

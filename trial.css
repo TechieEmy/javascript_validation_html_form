@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(2, 2, 75);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 40%;
+}
+form {
+  top: 10rem;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  height: 50%;
+  padding: 25px;
+}
+input {
+  width: 350px;
+  height: 35px;
+  margin: 1rem;
+  padding: 5px;
+  border: 1px solid black;
+  border-left-color: white;
+  border-right-color: white;
+  border-top-color: white;
+  outline: none;
+}
+textarea {
+  border: 1px solid black;
+  border-left-color: white;
+  border-right-color: white;
+  border-top-color: white;
+  width: 350px;
+  height: 35px;
+  outline: none;
+}
+button {
+  width: 150px;
+  height: 35px;
+  background-color: black;
+  border-radius: 5px;
+  color: #fff;
+  position: relative;
+  top: 1.5rem;
+  left: 9rem;
+}
+span {
+  color: red;
+  font-size: 10px;
+  position: absolute;
+  right: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+span svg {
+  background-color: seagreen;
+  width: 15px;
+  height: 20px;
+  border-radius: 100%;
+}
+#submit-error {
+  position: relative;
+  top: 5rem;
+  left: 8rem;
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+.container{
+                    height: 100vh;
+                    width: 100%;
+}
+form{
+                    position: relative;
+                    top: 3%; 
+                    font-size: 16px;
+                    font-weight: bold;             
+}
+button{
+                    position: relative;
+                    top: 15%;
+}
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 480px){
+                    .container{
+                                        height: 100vh;
+                                        width: 100%;              
+                    }
+
+                    form{
+                                        top: 3%;
+                                        padding: 10px;
+                                        font-size: 16px;
+                                        font-weight: bold;
+                    }
+                    button{
+                                        top: 10%;
+                                        position: relative;
+                                        left: 30%;
+                                        font-size: 14px;
+                    }
+}
